@@ -213,6 +213,60 @@ section.success {
     }
 }
 
+#favorites .fav-icons img {
+    display: inline-block;
+    width: 100px;
+    margin: 10px;
+}
+
+#favorites .hack-icons img {
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+}
+
+#favorites .col-sm-4 {
+    padding-top: 20px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+@media(min-width: 768px) and (max-width: 991px) {
+    #favorites .fav-icons img {
+        display: inline-block;
+        padding-top: 20px;
+        width: 70px;
+        margin: 0;
+    }
+
+    #favorites .hack-icons img {
+        display: inline-block;
+        padding-top: 20px;
+        width: 70px;
+        margin: 0;
+    }
+}
+
+@media(max-width: 767px) {
+    #favorites .fav-icons img {
+        margin: 0;
+    }
+
+    #favorites .hack-icons img {
+        margin: 0;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199px) {
+    #favorites .fav-icons img {
+        margin: 0;
+    }
+
+    #favorites .hack-icons img {
+        margin: 2px;
+    }
+}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
