@@ -225,7 +225,8 @@ section.success {
     margin: 5px;
 }
 
-#favorites .col-sm-4 {
+#favorites .col-sm-4 .fav-icons,
+#favorites .col-sm-4 .hack-icons {
     padding-top: 20px;
     padding-right: 0;
     padding-left: 0;
