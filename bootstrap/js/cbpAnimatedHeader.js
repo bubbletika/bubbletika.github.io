@@ -1,12 +1,6 @@
 /**
  * cbpAnimatedHeader.js v1.0.0
- * http://www.codrops.com
  *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2013, Codrops
- * http://www.codrops.com
  */
 var cbpAnimatedHeader = (function() {
 
@@ -42,3 +36,24 @@ var cbpAnimatedHeader = (function() {
 	init();
 
 })();
+
+$(document).ready(function () {
+
+    var navbar = $('.navbar');
+    var origOffsetY = navbar.offset().top;
+
+    function scroll() {
+        if ($(window).scrollTop() >= origOffsetY) {
+            $('.menu').addClass('sticky');
+            $('.content').addClass('menu-padding');
+        } else {
+            $('.menu').removeClass('sticky');
+            $('.content').removeClass('menu-padding');
+        }
+
+
+    }
+
+    document.onscroll = scroll;
+
+});

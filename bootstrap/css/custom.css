@@ -79,7 +79,20 @@ header {
     text-align: center;
     color: #fff;
     /*background: #18bc9c;*/
+    /*background: #8FA5B8;*/
+}
+
+header .right {
+    background: url("../img/me2.JPG") no-repeat center;
+    background-size: cover;
+    max-width: 100%;
+    padding: 100px;
+}
+
+header .left {
     background: #8FA5B8;
+    padding: 45px;
+    opacity: 0.8;
 }
 
 header .container {
