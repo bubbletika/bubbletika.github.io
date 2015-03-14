@@ -84,19 +84,20 @@ header {
 
 header .right {
     background: url("../img/me2.JPG") no-repeat center;
-    background-size: cover;
+    background-size: 100%;
     max-width: 100%;
-    padding: 100px;
+    height: 100%;
+    padding: 20%;
 }
 
 header .left {
     background: #8FA5B8;
-    padding: 45px;
+    background-size: 30%;
     opacity: 0.8;
+    padding: 40px;
 }
 
 header .container {
-    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -135,7 +136,6 @@ header .intro-text .skills {
 
 @media(min-width:768px) {
     .navbar-fixed-top {
-        padding: 25px 0;
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -163,6 +163,9 @@ header .intro-text .skills {
     font-weight: 700;
 }
 
+.navbar-style .navbar-brand{
+}
+
 .navbar a:focus {
     outline: 0;
 }
@@ -184,6 +187,32 @@ header .intro-text .skills {
 .navbar-inverse {
     border: 0;
     background-color: #E8FFF6;
+}
+
+/* columns of same height styles */
+.row-same-height {
+    display: table;
+    width: 100%;
+}
+.col-xs-height {
+    display: table-cell;
+    float: none !important;
+}
+.row.borders{
+    display: inline-flex;
+    width: 100%;
+}
+
+@media(min-width: 768px) {
+    .row {
+        display: table;
+    }
+
+    [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }
 }
 
 section {
