@@ -21,7 +21,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #F4DBDB;
+    color: #FFD9D9;
     text-decoration: none;
 }
 
@@ -129,7 +129,6 @@ header .intro-text .skills {
 }
 
 header .nav-block-row {
-    //background: #E8FFF6;
     background: #686675;
     text-transform: uppercase;
     font-family: "Righteous",Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
@@ -140,7 +139,7 @@ header .nav-block-row {
 }
 
 header .nav-block {
-    padding: 2.5em;
+    padding: 1.5em 2.5em;
     border: 0;
 }
 
@@ -262,12 +261,30 @@ section.success {
     }
 }
 
-#about img {
+#about {
+    padding-top: 8%;
+}
+
+#about .description-padding {
+    margin-top: 8%;
+}
+
+#about .info {
+    margin-top: 3%;
+}
+
+#about .sixth {
+    border-radius: 50%;
+    width: 11em;
+    height: 11em;
 }
 
 #about .description {
     margin-top: 10%;
     margin-left: 2%;
+    font-weight: 400;
+    font-size: 2em;
+    font-family: "Lato";
 }
 
 @media(max-width:767px) {

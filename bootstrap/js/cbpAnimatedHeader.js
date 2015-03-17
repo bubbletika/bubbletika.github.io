@@ -8,8 +8,11 @@ $(document).ready(function () {
    	//hide navbar at first
     $('.navbar').hide();
 
+    var top = $("#header").offset().top;
+    var height = $("#header").outerHeight();
+
     function scroll() {
-        if ($(window).scrollTop() > 550) {
+        if ($(window).scrollTop() > (top + height)) {
             $('.navbar').fadeIn();
         } else {
             $('.navbar').fadeOut();
