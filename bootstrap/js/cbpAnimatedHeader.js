@@ -9,11 +9,14 @@ $(document).ready(function () {
     var origOffsetY = navbar.offset().top;
 
     function scroll() {
-        if ($(window).scrollTop() >= origOffsetY) {
+        if ($(window).scrollTop() > origOffsetY) {
             $('.navbar').addClass('navbar-fixed-top');
             $('.navbar').addClass('navbar-shrink');
+            $('.navbar').removeClass('navbar-space');
+            $('.nav').removeClass('navbar-begin');
         } else {
-        	$('.navbar').removeClass('navbar-begin')
+			$('.nav').addClass('navbar-begin');
+			$('.navbar').addClass('navbar-space');
             $('.navbar').removeClass('navbar-fixed-top');
             $('.navbar').removeClass('navbar-shrink');
         }
