@@ -295,6 +295,31 @@ section.success {
     }
 }
 
+#experience {
+    background: #a4a0bd;
+}
+
+#experience .description {
+    font-family: "Lato";
+    font-size: 120%;
+}
+
+#experience .work img {
+    width: 45%;
+    opacity: 0.8;
+}
+
+#experience h4 {
+    font-family: "Lato";
+    color: #686675;
+    font-weight: 700;
+}
+
+#experience span {
+    font-size: 120%;
+    text-align: left;
+}
+
 #favorites .btn-outline {
     width: 300px;
     margin-top: 15px;
