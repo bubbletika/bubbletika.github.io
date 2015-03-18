@@ -795,6 +795,13 @@ footer .footer-below {
     background: 0 0;
 }
 
+.modal-body .heading {
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: "Raleway",Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding: 0 3% 3% 3%;
+}
+
 .modal-body .caption {
     position: absolute;
     width: 100%;
