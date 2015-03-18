@@ -418,7 +418,8 @@ section.success {
     background: url("../img/purple-back.png") no-repeat center;
 }
 
-#more #abroad-content .description {
+#more #abroad-content .description,
+#more #awards-content .description {
     background: rgba(255, 255, 255, 0.7);
     padding: 2em;
     font-family: "Raleway";
@@ -427,6 +428,10 @@ section.success {
 
 #more .favs-content {
     background: rgba(73, 71, 76, 0.33);
+}
+
+#more .favs-content:hover {
+    color: #FFD9D9;
 }
 
 /*Equal height columns for More section*/
@@ -538,11 +543,12 @@ section.success {
 }
 
 .btn-outline {
+    font-family: "Raleway";
     margin-top: 15px;
-    border: solid 3px #8FA5B8;
+    border: solid 3px #a4a0bd;
     font-size: 20px;
     color: #fff;
-    background: #8FA5B8;
+    background: #a4a0bd;
     transition: all .3s ease-in-out;
 }
 
@@ -550,8 +556,8 @@ section.success {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-    border: solid 3px #8FA5B8;
-    color: #8FA5B8;
+    border: solid 3px #a4a0bd;
+    color: #a4a0bd;
     background: 0 0;
 }
 
