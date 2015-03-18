@@ -87,8 +87,6 @@ hr.heart-primary:after {
 header {
     text-align: center;
     color: #fff;
-    /*background: #18bc9c;*/
-    /*background: #8FA5B8;*/
 }
 
 header .right {
@@ -101,9 +99,8 @@ header .right {
 
 header .left {
     background: #a4a0bd;
-    background-size: 30%;
     opacity: 0.8;
-    padding: 40px;
+    padding: 5%;
 }
 
 @media (max-width: 768px) {
