@@ -32,7 +32,7 @@ h4,
 h5,
 h6 {
     text-transform: uppercase;
-    font-family: "Signika",Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: "Righteous",Montserrat,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
 
@@ -106,6 +106,12 @@ header .left {
     padding: 40px;
 }
 
+@media (max-width: 768px) {
+    header .right{
+        padding: 30%;
+    }
+}
+
 header .container {
     padding-bottom: 50px;
 }
@@ -118,7 +124,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat",Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 2em;
     font-weight: 700;
 }
@@ -126,6 +132,7 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+    font-family: "Raleway",Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 header .nav-block-row {
@@ -177,7 +184,11 @@ header .nav-block {
     }
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
-        font-size: 1.5em;
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+        letter-spacing: 1px;
     }
 }
 
@@ -266,11 +277,7 @@ section.success {
 }
 
 #about .description-padding {
-    padding-top: 8%;
-}
-
-#about .info {
-    margin-top: 3%;
+    padding: 1%;
 }
 
 #about .sixth {
@@ -279,19 +286,27 @@ section.success {
     height: 11em;
 }
 
-#about .description {
-    margin-top: 10%;
-    margin-left: 2%;
-    font-weight: 400;
+#about .heading {
+    font-weight: 600;
     font-size: 2em;
-    font-family: "Lato";
+    font-family: "Raleway",Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding: 0 3% 3% 3%;
+}
+
+#about .description {
+    padding: 1% 8%;
+    font-weight: 300;
+    font-size: 1.5em;
+    font-family: "Raleway",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+#about .small {
+    font-size: 1.3em;
 }
 
 @media(max-width:767px) {
     #about .description {
-        margin-top: 10%;
-        margin-left: 10%;
-        margin-right: 10%;
+        padding: 5%;
     }
 }
 
@@ -300,8 +315,12 @@ section.success {
 }
 
 #experience .description {
-    font-family: "Lato";
+    font-family: "Raleway",Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 120%;
+}
+
+#experience .work {
+    padding: 0 2% 2% 2%;
 }
 
 #experience .work img {
@@ -318,6 +337,12 @@ section.success {
 #experience span {
     font-size: 120%;
     text-align: left;
+}
+
+@media(max-width:767px) {
+    #experience .work {
+        padding: 0 10% 10% 10%;
+    }
 }
 
 #favorites .btn-outline {
@@ -361,6 +386,62 @@ section.success {
     padding-right: 0;
     padding-left: 0;
 }
+
+/* Much More Section */
+#more #favs,
+#more #hackathons,
+#more #abroad,
+#more #awards {
+    background: #686675;
+    padding: 10px;
+    color: white;
+    font-size: 2em;
+}
+
+#more .spacing {
+    margin-top: 1.5em;
+}
+#more #favs-content img,
+#more #hackathons-content img,
+#more #abroad-content img,
+#more #awards-content img {
+    display: block;
+    width: 40%;
+    opacity: 1;
+    padding: 10px 0;
+}
+
+#more #favs-content,
+#more #hackathons-content ,
+#more #abroad-content ,
+#more #awards-content  {
+    background: url("../img/purple-back.png") no-repeat center;
+}
+
+#more #abroad-content .description {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2em;
+    font-family: "Raleway";
+    font-weight: 600;
+}
+
+#more .favs-content {
+    background: rgba(73, 71, 76, 0.33);
+}
+
+/*Equal height columns for More section*/
+@media(min-width: 768px) {
+    /*#more .row {
+        display: table;
+    }
+
+    #more [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }*/
+}
+
 
 @media(min-width: 768px) and (max-width: 991px) {
     #favorites .fav-icons img {
@@ -415,14 +496,14 @@ section.success {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: #8FA5B8;
+    background: #686675;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
-    opacity: 1;
+    opacity: 0.5;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
@@ -550,6 +631,10 @@ footer .footer-below {
     background-color: #233140;
 }
 
+.btn {
+    font-family: "Raleway",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
 .btn-social {
     display: inline-block;
     width: 50px;
@@ -583,8 +668,8 @@ footer .footer-below {
 .btn-footer:focus,
 .btn-footer:active,
 .btn-footer.active {
-    border: solid 3px #F4DBDB;
-    color: #F4DBDB;
+    border: solid 3px #FFD9D9;
+    color: #FFD9D9;
     font-size: 20px;
     background: 0 0;
 }
@@ -614,6 +699,7 @@ footer .footer-below {
 }
 
 .portfolio-modal .modal-content {
+    font-family: "Raleway",Lato,Helvetica Neue,Helvetica,Arial,sans-serif;
     padding: 100px 0;
     min-height: 100%;
     width: 100%;
@@ -771,10 +857,15 @@ section#skills {
 }
 
 .skills-style {
-    font-family: "Signika";
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 2em;
     color: black;
+    margin-left: 15px;
+}
+
+.skills-padding {
+    padding-top: 1em;
 }
 
 #skills .col-md-2 {
@@ -786,12 +877,21 @@ section#skills {
   border-radius: 100%;
   text-align: center;
   display: block;
-  height: 100%;
-  width: 100%;
-  padding: 50% 0;
+  height: 80%;
+  width: 80%;
+  padding: 40% 0;
   background: #fff;
   opacity: 0.4;  
   line-height: 0;
 }
 
+@media(max-width: 767px) {
+    #skills .circle {
+        line-height: 0;
+    }
+
+    .skills-style {
+        font-size: .5em;
+    }
+}
 
