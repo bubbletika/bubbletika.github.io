@@ -827,14 +827,14 @@ footer .footer-below {
 
 .btn-link {
     background: 0 0;
-    color: #8FA5B8;
-    border: 3px solid #8FA5B8;
+    color: #a4a0bd;
+    border: 3px solid #a4a0bd;
 }
 
 .btn-link:hover,
 .btn-link:focus,
 .btn-link:active {
-    background: #8FA5B8;
+    background: #a4a0bd;
     color: #fff;
 }
 
